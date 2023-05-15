@@ -34,19 +34,19 @@
 
 
 
-<h1 style="color:DodgerBlue;"><strong>1/système de gestion de version</strong></h1>
+<h1 style="color:DodgerBlue;"><strong>1/systÃ¨me de gestion de version</strong></h1>
 
 
 <p style ="margin: 15px;">
 
 <img src="git-logo.png" alt="git-logo"  width="90" height="90" style="float: right;">
 
--logiciel de gestion de version est un logiciel qui permet de conserver un historique des modifications effectu&eacute;es sur un projet et de revenir a une ancienne version en cas de problème. <br>
--Un système de gestion de version permet de synchroniser le travail de plusieurs développeurs, la connexion aux autres projets et la mise à jour automatique du travail dans le dossier local avec le serveur<br>
--Il existe deux model de système de gestion : model centralisé et un model distribué a:
+-logiciel de gestion de version est un logiciel qui permet de conserver un historique des modifications effectu&eacute;es sur un projet et de revenir a une ancienne version en cas de problÃ¨me. <br>
+-Un systÃ¨me de gestion de version permet de synchroniser le travail de plusieurs dÃ©veloppeurs, la connexion aux autres projets et la mise Ã  jour automatique du travail dans le dossier local avec le serveur<br>
+-Il existe deux model de systÃ¨me de gestion : model centralisÃ© et un model distribuÃ© a:
 <ul>
-<li><strong><ins>Model centralisé :</strong></ins> le code source liée au projet est dans un serveur centrale et les développeurs doivent se connecter pour travailler sur le projet.</li>
-<li><strong><ins>Model distribué :</strong></ins> est l’opposé d’un model centralisé. Le code source est dans un serveur centrale mais tous les développeurs peut télécharger et créer un répertoire  locale.</li>
+<li><strong><ins>Model centralisÃ© :</strong></ins> le code source liÃ©e au projet est dans un serveur centrale et les dÃ©veloppeurs doivent se connecter pour travailler sur le projet.</li>
+<li><strong><ins>Model distribuÃ© :</strong></ins> est lâ€™opposÃ© dâ€™un model centralisÃ©. Le code source est dans un serveur centrale mais tous les dÃ©veloppeurs peut tÃ©lÃ©charger et crÃ©er un rÃ©pertoire  locale.</li>
 </ul>
 </p>
 
@@ -57,36 +57,36 @@
 <img src="github-logo.png" alt="github-logo" align="right" width="90" height="90" style="float:right;">
 
 
-<strong><ins>-Git :</ins></strong> est un système de gestion de version décentralisé (model distribué)  qui gère les fichiers d’un projet et son historique, ce dernier est appelé repository <br>
-<ins><strong>-GitHub :</ins></strong> est un service en ligne qui joue le rôle de serveur centrale qui héberge le code source et permet a n’importe qui de contribuer à un projet (si le dépôt hébergé est public).
+<strong><ins>-Git :</ins></strong> est un systÃ¨me de gestion de version dÃ©centralisÃ© (model distribuÃ©)  qui gÃ¨re les fichiers dâ€™un projet et son historique, ce dernier est appelÃ© repository <br>
+<ins><strong>-GitHub :</ins></strong> est un service en ligne qui joue le rÃ´le de serveur centrale qui hÃ©berge le code source et permet a nâ€™importe qui de contribuer Ã  un projet (si le dÃ©pÃ´t hÃ©bergÃ© est public).
 
 </p>
 
 <h1 style="color:DodgerBlue;"><strong>3/la gestion de information selon Git</strong></h1>
 <p style ="margin: 15px;">
-	Git prend des « snapshots »   à chaque fois on veut enregistrer ou valider l’état de projet, puis il garde ces snapshots dans une base de donne locale ce qui crée un historique de tous les diffèrent états de projet.<br>
-	Pour suivre les modifications d’un projet , Un fichier a seaux état : Suivi et non Suivi  ,
-Les fichiers suivis sont enregistrés dans la base des données et les fichiers non suivis ne sont pas. <br>
-	-un  fichier suivi lui-même  peut avoir trois état :
+	Git prend des Â« snapshots Â»   Ã  chaque fois on veut enregistrer ou valider lâ€™Ã©tat de projet, puis il garde ces snapshots dans une base de donne locale ce qui crÃ©e un historique de tous les diffÃ¨rent Ã©tats de projet.<br>
+	Pour suivre les modifications dâ€™un projet , Un fichier a seaux Ã©tat : Suivi et non Suivi  ,
+Les fichiers suivis sont enregistrÃ©s dans la base des donnÃ©es et les fichiers non suivis ne sont pas. <br>
+	-un  fichier suivi lui-mÃªme  peut avoir trois Ã©tat :
 <ul>
- <li><ins><strong>Staged :</ins></strong> cette état indique au Git que ce fichier va être dans le nouveau snapshot.<br> </li>
- <li><ins><strong>Modified :</ins></strong> cette état indique au Git que ce fichier a été modifie depuis le dernier snapshot.<br> </li>
- <li><ins><strong>Commited :</ins></strong> tous les fichiers enregistré dans les base de donée ont l’état Commited<br> </li>
+ <li><ins><strong>Staged :</ins></strong> cette Ã©tat indique au Git que ce fichier va Ãªtre dans le nouveau snapshot.<br> </li>
+ <li><ins><strong>Modified :</ins></strong> cette Ã©tat indique au Git que ce fichier a Ã©tÃ© modifie depuis le dernier snapshot.<br> </li>
+ <li><ins><strong>Commited :</ins></strong> tous les fichiers enregistrÃ© dans les base de donÃ©e ont lâ€™Ã©tat Commited<br> </li>
 </ul>
 </p>
 
 <h1 style="color:DodgerBlue;"><strong>4/les zones de travail</strong></h1>
 <p style ="margin: 15px;">
-Les états de fichiers sont liés à des zones de travail dans Git. Tout projet Git est composé de trois
-sections : le répertoire de travail (working tree), la zone d’index (staging area) et le répertoire
+Les Ã©tats de fichiers sont liÃ©s Ã  des zones de travail dans Git. Tout projet Git est composÃ© de trois
+sections : le rÃ©pertoire de travail (working tree), la zone dâ€™index (staging area) et le rÃ©pertoire
 Git (repository).<br>
 <ul>
- <li><ins><strong>Le répertoire de travail ou “working tree”:</ins></strong> une extraction unique (“checkout”)
-d’une version du projet. Les fichiers sont extraits de la base de données compressée située
-dans le répertoire Git et sont placés sur le disque afin qu’on puisse les utiliser ou les modifier.</li>
+ <li><ins><strong>Le rÃ©pertoire de travail ou â€œworking treeâ€:</ins></strong> une extraction unique (â€œcheckoutâ€)
+dâ€™une version du projet. Les fichiers sont extraits de la base de donnÃ©es compressÃ©e situÃ©e
+dans le rÃ©pertoire Git et sont placÃ©s sur le disque afin quâ€™on puisse les utiliser ou les modifier.</li>
 
- <li><ins><strong>La zone d’index ou “staging area”:</ins></strong> un simple fichier qui stocke les informations concernant ce qui fera partie du prochain instantané ou du prochain “commit”.</li>
- <li><ins><strong>le répertoire Git (repository):</ins></strong> stocke les méta-données et la base de données du projet.</li>
+ <li><ins><strong>La zone dâ€™index ou â€œstaging areaâ€:</ins></strong> un simple fichier qui stocke les informations concernant ce qui fera partie du prochain instantanÃ© ou du prochain â€œcommitâ€.</li>
+ <li><ins><strong>le rÃ©pertoire Git (repository):</ins></strong> stocke les mÃ©ta-donnÃ©es et la base de donnÃ©es du projet.</li>
 </ul>
 </p>
 
@@ -95,32 +95,32 @@ dans le répertoire Git et sont placés sur le disque afin qu’on puisse les utilis
 <p style ="margin: 15px;">
 Pour utiliser le Git on utilise invite de commande (CMD.)<br>
 
-Apres l’installation de Git . il faut renseigner un nom d’utilisateur et une adresse mail que Git devra utiliser ensuite avec les commandes <br>
+Apres lâ€™installation de Git . il faut renseigner un nom dâ€™utilisateur et une adresse mail que Git devra utiliser ensuite avec les commandes <br>
 <ul>
-<li style="color:Tomato;">git config –global user.name<br></li>
-<li style="color:Tomato;">git config –global user.mail<br></li>
+<li style="color:Tomato;">git config â€“global user.name<br></li>
+<li style="color:Tomato;">git config â€“global user.mail<br></li>
 </ul>
 
-<strong><ins>Démarrage de depot:<ins></strong> <br>
-	Le dépôt est la copie et l’importation d’un fichier dans le Git . il y a deux façon de crée un dépôt :<br>
-	- importer un répertoire déjà existant dans Git.<br>
-	- cloner un dépôt Git déjà existant.<br>
-<strong><ins>Importation d’un dépôt existant:<ins></strong><br>
-Pour importer un répertoire existant on utilise les commandes suivantes :<br>
+<strong><ins>DÃ©marrage de depot:<ins></strong> <br>
+	Le dÃ©pÃ´t est la copie et lâ€™importation dâ€™un fichier dans le Git . il y a deux faÃ§on de crÃ©e un dÃ©pÃ´t :<br>
+	- importer un rÃ©pertoire dÃ©jÃ  existant dans Git.<br>
+	- cloner un dÃ©pÃ´t Git dÃ©jÃ  existant.<br>
+<strong><ins>Importation dâ€™un dÃ©pÃ´t existant:<ins></strong><br>
+Pour importer un rÃ©pertoire existant on utilise les commandes suivantes :<br>
 		<ul>
 		<li style="color:Tomato;">git init (pour initialiser le repertoire)</li>
-		<li style="color:Tomato;">git add (pour indexé des nouveaux fichier)</li>
-		<li style="color:Tomato;">git commit(pour prendre un snapshot des tous les fichier indexés )</li>
+		<li style="color:Tomato;">git add (pour indexÃ© des nouveaux fichier)</li>
+		<li style="color:Tomato;">git commit(pour prendre un snapshot des tous les fichier indexÃ©s )</li>
 		</ul>
-<strong><ins>Clonage d’un dépôt existant:</ins></strong><br>
-	après la création d’un dépôt dans Github on utilise l’URL de ce répertoire et les commande suivante pour liée le répertoire avec le serveur <br>
+<strong><ins>Clonage dâ€™un dÃ©pÃ´t existant:</ins></strong><br>
+	aprÃ¨s la crÃ©ation dâ€™un dÃ©pÃ´t dans Github on utilise lâ€™URL de ce rÃ©pertoire et les commande suivante pour liÃ©e le rÃ©pertoire avec le serveur <br>
 <ul>
 		<li style="color:Tomato;">git branch -M main</li>
 <li style="color:Tomato;">git remote add origin https://github.com/Lazy-Skelly/TIC-project.git</li>
 <li style="color:Tomato;">git push -u origin main</li>
 </ul>
-<strong><ins>Consultation et restauration de l’historique:</ins></strong><br>
-	Pour consulter l’historique des versions, l’auteur et date de modification on utilise la commande:
+<strong><ins>Consultation et restauration de lâ€™historique:</ins></strong><br>
+	Pour consulter lâ€™historique des versions, lâ€™auteur et date de modification on utilise la commande:
 <ul>
 		<li style="color:Tomato;">git log</li></ul>
 	Pour restaurer une version ou annuler une modification
@@ -130,9 +130,9 @@ Pour importer un répertoire existant on utilise les commandes suivantes :<br>
 
 <h1 style="color:DodgerBlue;"><strong>6/les branches</strong></h1>
 <p>
-	Les branches sont des copies de projet due l’utilisateur peut avoir pour travailler sur eux et les modifier sans affecter la copie principale. Cette dernière est appelée branche Master.<br>
-Le system de branche utilisé par Git n’utilise pas des copies physiques de tous le projet en revanche la branche est just un pointeur vers un commited. <br>
-<strong><ins>Note:</ins></strong> la branche master n’est pas spécial dans le systéme Git ;elle est traitée de la meme facon que les autres branches<br>
+	Les branches sont des copies de projet due lâ€™utilisateur peut avoir pour travailler sur eux et les modifier sans affecter la copie principale. Cette derniÃ¨re est appelÃ©e branche Master.<br>
+Le system de branche utilisÃ© par Git nâ€™utilise pas des copies physiques de tous le projet en revanche la branche est just un pointeur vers un commited. <br>
+<strong><ins>Note:</ins></strong> la branche master nâ€™est pas spÃ©cial dans le systÃ©me Git ;elle est traitÃ©e de la meme facon que les autres branches<br>
 </p>
 
 
@@ -141,43 +141,43 @@ Le system de branche utilisé par Git n’utilise pas des copies physiques de tous 
 
 <!-- Site footer -->
     <footer class="site-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">
-                        Copyright &copy; 2023 
-                        All Rights Reserved by section 3
-                    </p>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li>
-                            <a class="facebook" href="https://www.facebook.com/profile.php?id=100009056933849">
-                                <img src="facebook.png" alt="facebook" width="40" height="40" id="fb">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="instagram" href="https://www.instagram.com/lamia_koucem/">
-                                <img src="instagram.png" alt="instagram" width="40" height="40" id="ig">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dribbble" href="https://www.usthb.dz/">
-                                <img src="usthb.png" alt="usthb" width="40" height="40" id="usthbb">
-                                <i class="fa fa-usthb"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a class="linkedin" href="https://fr.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
-                                <img src="linkedin.png" alt="linkedin" width="40" height="40" id="linkd">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>   
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <div class="container2">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">
+          Copyright &copy; 2023
+          All Rights Reserved by Section 3
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li>
+            <a class="facebook" href="https://www.facebook.com/profile.php?id=100009056933849">
+              <img src="../pics/link.jpg" alt="facebook" width="40" height="40" id="fb">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/lamia_koucem/">
+              <img src="../pics/ig.jpg" alt="instagram" width="40" height="40" id="ig">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a class="dribbble" href="https://www.usthb.dz/">
+              <img src="../pics/usthb.jpg" alt="usthb" width="40" height="40" id="usthbb">
+              <i class="fa fa-usthb"></i>
+            </a>
+          </li>
+          <li>
+            <a class="linkedin" href="https://fr.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+              <img src="../pics/face.jpg" alt="linkedin" width="40" height="40" id="linkd">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
 </html>
