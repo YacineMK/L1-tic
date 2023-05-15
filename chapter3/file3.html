@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="file3.css">
+  <title>Chapitre 3</title>
+<link rel="icon" href="icon.png" type="image/icon type">
+
+  <title>Document</title>
+</head>
+<header>
+  <div class="logo">
+    <h1>ACTIVITY <span class="tic">TIC</span></h1>
+  </div>
+<div class= "links">
+<a href="homepage.html">Homepage</a>
+</div>
+<div class= "links">	
+<a href="about_us.html">About Us</a>	
+</div>
+  <div class="buttons">
+    <button class="login">
+      <span>Log In</span>
+    </button>
+    <button class="signup">
+
+
+      <span>Sign Up</span>
+    </button>
+  </div>
+
+	
+
+</header>
+<body>
+
+  <h1>1) Les composants matériels d’un réseau informatique :</h1>
+  <p> - Les cartes réseau : Permettent à un ordinateur de se connecter à un réseau tel qu'Internet ou un réseau local. Les cartes réseau sont installées à l'intérieur de l'ordinateur et sont connectées à une prise Ethernet ou Wi-Fi. Elles sont essentielles pour la communication entre ordinateurs et permettent de transmettre et de recevoir des données via des protocoles de communication spécifiques, tels que TCP/IP. </p>
+  <p>
+    - SWITCH (commutateur réseau) : Connecte les périphériques d'un réseau local à l'aide d'adresses MAC. Il stocke l'adresse MAC de chaque appareil connecté et utilise ces informations pour envoyer des données uniquement à l'appareil prévu. Les SWITCHS sont disponibles en différentes tailles et offrent des fonctionnalités avancées telles que la gestion VLAN et la qualité de service. </p>
+  <p>
+    - HUB (concentrateur) : Connecte plusieurs appareils a un réseau local (LAN), il reçoit les donnée et les transmet à tous les autres appareils connectés contrairement au SWITCH qui l’envoie au destinataire seulement. Les HUBS sont moins utilisés que les switches car ils sont moins efficaces pour la gestion des trafics réseau.
+  </p>
+
+  <h1>2) Le modèle OSI :</h1>
+  <p>Le modèle OSI (Open Systems Interconnection) est une référence pour les communications de réseau, qui divise les communications en sept couches distinctes. Chaque couche a des fonctions spécifiques liées à la communication de données entre les appareils de réseau. Le modèle OSI est souvent utilisé pour la conception et la mise en œuvre de réseaux informatiques. Les sept couches du modèle OSI sont : la couche physique, la couche liaison de données, la couche réseau, la couche transport, la couche session, la couche présentation et la couche application. Bien que ce modèle ne soit pas utilisé dans les protocoles de communication modernes comme TCP/IP, il reste utile pour comprendre les principes fondamentaux de la communication de réseau.</p>
+<div class = "photo">
+  <img src="modele_osi.jpg" width = "500px" height = "300px"alt="Diagramme des sept couches">
+</div>
+  <h1> 3) Le modèle TCP/IP : </h1>
+
+  <p> Le modèle TCP/IP est un modèle de référence pour les communications de réseau. Il divise les communications en quatre couches principales : la couche liaison de données, la couche réseau, la couche transport et la couche application. Contrairement au modèle OSI qui divise les communications en sept couches. Le modèle TCP/IP est le modèle de référence pour les protocoles de communication de réseau les plus largement utilisés, tels que le protocole Internet (IP), le protocole de contrôle de transmission (TCP) et le protocole de datagramme utilisateur (UDP). Il est utilisé pour la conception et la mise en œuvre des réseaux d'entreprise, des réseaux Internet et des réseaux sans fil. </p>
+<div class = "photo">
+  <img src="tableau.jpg" width = "500px" height = "250px" "alt="Tableau">
+</div>
+  <h1>4) L’adressage : </h1>
+  <p>
+    Le chapitre explique que les communications dans un réseau doivent suivre certaines règles, notamment en matière d'adressage, d'architecture et de protocoles. L'adressage IP est ensuite défini comme un numéro unique qui identifie chaque ordinateur dans les réseaux auxquels il appartient. Il y a deux modes d'adressage, IPV4 et IPV6, avec des différences de taille d'adresse et de représentation. Dans le cas d'IPV4, chaque paquet contient une adresse source et une adresse destinataire, toutes deux codées sur 32 bits, soit 4 octets, représentées en décimale par 4 chiffres séparés par des points.
+  </p>
+  <h1> 5) L’adresse IPV4 : </h1>
+  <h3>Les adresses IPV4 contiennent 4 octets, donc 32 bits, et se divise en 4 parties :</h3>
+  <p>
+    1. L'adresse réseau : Tous les bits de la partie hôte sont à zéro. Par exemple, l'adresse 10.0.0.0 est une adresse réseau et tous les hôtes (machines) connectés à ce réseau ont la même partie réseau.</p>
+  <p>
+    2. L'adresse de diffusion : Tous les bits de la partie hôte sont à un. Cette adresse permet à un ordinateur d'envoyer des paquets à l'ensemble du réseau. Par exemple, pour le réseau 10.0.0.0, l'adresse de diffusion est 10.255.255.255.</p>
+  <p>
+    3. L'adresse hôte : Elle est attribuée aux machines connectées à un réseau et se situe entre l'adresse réseau et l'adresse de diffusion.
+  </p>
+  <p>
+    4. Le masque de réseaux : Le masque de réseau est une valeur binaire qui détermine la partie de l'adresse IP qui représente le réseau et la partie qui représente les hôtes. Tous les bits de la partie réseau sont représentés par des "1" dans le masque de réseau.
+    Cela signifie que les 8 premiers bits de l'adresse IP représentent le réseau, et les 24 bits suivants représentent les hôtes. La plage d'adresses IP disponibles pour les hôtes de ce réseau est donc de 10.0.0.1 à 10.255.255.254.</p>
+<div class = "photo">
+<img src="transformation.jpg" width = "500px" height = "150px"alt="Tableau">
+</div>
+</body>
+
+<footer class="site-footer">
+  <div class="container2">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">
+          Copyright &copy; 2023
+          All Rights Reserved by Section 3
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li>
+            <a class="facebook" href="https://www.facebook.com/profile.php?id=100009056933849">
+              <img src="facebook.png" alt="facebook" width="40" height="40" id="fb">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="instagram" href="https://www.instagram.com/lamia_koucem/">
+              <img src="instagram.png" alt="instagram" width="40" height="40" id="ig">
+              <i class="fa fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a class="dribbble" href="https://www.usthb.dz/">
+              <img src="usthb.png" alt="usthb" width="40" height="40" id="usthbb">
+              <i class="fa fa-usthb"></i>
+            </a>
+          </li>
+          <li>
+            <a class="linkedin" href="https://fr.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
+              <img src="linkedin.png" alt="linkedin" width="40" height="40" id="linkd">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
