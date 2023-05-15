@@ -1,0 +1,159 @@
+/* set background color for the entire page */
+
+  h1 {
+    text-align: center;
+  }
+
+  /* style the main content area */
+ 
+  
+  /* style the heading tags */
+  h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* style the paragraph text */
+  p {
+    color: #666;
+    line-height: 1.5;
+  }
+
+  /* style the unordered list */
+  ul {
+    color: #666;
+    line-height: 1.5;
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+  
+  /* style the list item */
+  li {
+    color: #666;
+  }
+  
+  /* style the anchor tag */
+  a {
+    color: #0099cc;
+    text-decoration: none;
+  }
+  
+  /* style the image */
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 100%;
+  }
+  
+  /* style the code blocks */
+  code {
+    background-color: #e7e7e8;
+    color: #333;
+    font-family: "Courier New", Courier, monospace;
+    padding: 2px 5px;
+  }
+  
+  /* style the blockquotes */
+  blockquote {
+    color: #ded7d7;
+    border-left: 3px solid #dcd7d7;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  /* style the main content area */
+  #main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f4f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  
+  
+  /* style the paragraph text */
+  p {
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* style the unordered list */
+  ul {
+    color: #666;
+    line-height: 1.5;
+    list-style-type: disc;
+    margin-left: 30px;
+  }
+  
+  /* style the list item */
+  li {
+    color: #666;
+  }
+  
+  /* style the anchor tag */
+  a {
+    color: #0099cc;
+    text-decoration: none;
+  }
+  
+  /* style the image */
+  img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 100%;
+  }
+  
+
+  
+  /* style the code blocks */
+  code {
+    background-color: #d8d8d9;
+    color: #333;
+    font-family: "Courier New", Courier, monospace;
+    padding: 2px 5px;
+  }
+  
+  /* style the blockquotes */
+  blockquote {
+    color: #fbfbfb;
+    border-left: 3px solid #f8f4f4;
+    margin: 0;
+    padding-left: 10px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Adjust this value based on your layout */
+  }
+  
+ 
+  body {
+    background: linear-gradient(-45deg, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .image-container {
+    float: right;
+  }
+  .image-containe {
+    float: left;
+  }
