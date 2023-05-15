@@ -14,7 +14,7 @@ css : html {
     flex-direction: column;
     height: 100%;
 
-	background: linear-gradient(45deg, rgba(254,233,253,1) 0%, rgba(201,254,255,1) 50%, rgb (191,255,216,1)100%);
+	  background: linear-gradient(-45deg, #e686ab, #a1cede, #96dfce);
     background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 
