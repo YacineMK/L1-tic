@@ -38,7 +38,7 @@ font-family: 'Instrument Sans', sans-serif;
   width: 80%;
   margin-left: 10%;
   margin-right: auto;
-  background: linear-gradient(120deg, rgba(206, 119, 119, 0.3) 30.73%, rgba(206, 119, 120, 0) 100%);
+ 
   border-radius: 60px;
 
 }
@@ -83,9 +83,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  
+  border-radius: 20%;
   
 }/* Apply the animation to the body element */
+
 
 
 
@@ -140,7 +141,7 @@ linear-gradient(95.12deg, #6096B4 -11.92%, rgba(43, 58, 85, 0) 123.2%);
 
 .goal-text {
   font-size: 1.2em;
-  color: #B06363;
+  color: #5f3a3a;
   justify-content: center;
 }
 
